@@ -16,9 +16,9 @@
   <main class="container mx-auto text-center my-4">
     <input id="todo-input" placeholder="Your Todo" class="border-2 border-zinc-300 rounded px-4 py-2 mx-2" type="text" name="todo"/>
     <button id="add-todo" class="disabled:text-black disabled:bg-zinc-300 border-2 rounded bg-sky-600 text-white border-sky-800 px-8 py-2 mx-2">Add Todo</button>
-    <h3 id="no-todo-header" class="my-8 text-xl text-zinc-300 uppercase">Add your first ToDo</h3>
+    <h3 id="no-todo-header" class="my-8 text-xl text-zinc-300 uppercase">Add your first ToDo <span id="in-progress-count"></span></h3>
     <div id="in-progress-list" class="relative border-2 rounded border-zinc-300 text-left max-w-[500px] mx-auto my-6 px-4 hidden">
-      <span class="absolute text-zinc-300 uppercase -top-[14px] ml-2 px-4 bg-white">In Progress</span>
+      <h4 class="absolute text-zinc-300 uppercase -top-[14px] ml-2 px-4 bg-white">In Progress</h4>
       <ul id="todo-list" class="my-4 text-left flex flex-col mx-auto pt-4"></ul>
     </div>
     <div id="completed-list" class="relative border-2 rounded border-zinc-300 text-left max-w-[500px] mx-auto px-4 hidden">
